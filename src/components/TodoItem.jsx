@@ -1,6 +1,6 @@
 import React from 'react';
 
-function TodoItem({ id, text, completed }) {
+function TodoItem({ id, text, completed, removeTodo, toggleTodoComlete }) {
   return (
     <li>
       <input

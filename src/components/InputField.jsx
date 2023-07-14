@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-function InputField() {
+function InputField({ text, handleInput, handleSubmit }) {
   return (
-    <div>InputField</div>
-  )
+    <label>
+      <input value={text} onChange={e => handleInput(e.target.value)} />
+      <button onClick={handleSubmit}>Add Todo</button>
+    </label>
+  );
 }
 
-export default InputField
+export default InputField;
